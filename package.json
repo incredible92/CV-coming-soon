@@ -7,7 +7,9 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
     "autoprefixer": "^10.1.0",
+    "node-sass": "^4.14.1",
     "postcss": "^8.2.2",
+    "postcss-cli": "^8.3.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
@@ -18,7 +20,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "style:watch": "postcss src/source.scss -o src/index.scss --watch",
+    "style:build": "npx tailwind build src/source.scss -o src/index.scss"
+		
   },
   "eslintConfig": {
     "extends": [
