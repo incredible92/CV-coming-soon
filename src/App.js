@@ -1,35 +1,20 @@
-import logo from './logo/cv.png'
-import './App.css';
+import logo from './logo/cv2.png'
+import './App.scss';
+
 
 function App() {
   return (
-    <div className="Add">
-      <div className="bg-gray-400" >
-        <img  className="logo"src={logo} alt="logo"/>
-      </div>
-      <h2>HEY! WE ARE COMING SOON...</h2>
-      <div className="duration">
-        <div className="time">
-          <span>00</span>
-          <span>Day</span>
-        </div>
-
-        <div className="time">
-          <span>00</span>
-          <span>Hours</span>
-        </div>
-
-        <div className="time">
-          <span>00</span>
-          <span>Minutes</span>
-        </div>
-
-        <div className="time">
-          <span>00</span>
-          <span>Seconds</span>
-        </div>
+    <div className="app">
+      <div className=" flex  ">
+          <div className="mt-3 "  >
+           <div className="ml-40"> <img  className="w-16 md:w-32 lg:w-48 "src={logo} alt="logo"/></div>
+            
+            <h1 className="mt-3 text-white text-5xl">WE ARE COMING SOON...</h1>
+          </div>
+         
       </div>
     </div>
+    
   );
 }
 
